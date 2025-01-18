@@ -7,3 +7,9 @@
   font-weight: 400;
   font-style: normal;
 }
+.navbar{
+  display: flex;
+}
+.navlinks{
+  display: flex;
+}
