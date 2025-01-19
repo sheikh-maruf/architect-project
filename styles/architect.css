@@ -9,7 +9,7 @@
 }
 /* shared styles */
 .display-flex{
-  display: flex;
+  display:flex;
 }
 
 /* dark 02 */
@@ -22,17 +22,21 @@
 }
 .bg-light{
   background-color: rgba(255, 144, 14, 0.1);
+  padding: 50px 50px;
 }
 .btn-primary{
   background-color: rgba(255, 144, 14, 1);
   color: white;
-
   padding: 20px 25px;
   font-size: 1.25rem;
   font-weight: 600px;
   border-radius: 8px;
   border: none;
 
+}
+main{
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* header styles */
@@ -43,6 +47,8 @@
 .navbar{
   justify-content: space-between;
   align-items: center;
+
+
 }
 .brand{
   font-weight: 700;
@@ -56,6 +62,10 @@
   text-decoration: none;
   font-weight: 500;
   
+}
+.navbar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
 }
 /* banner related styles */
 .banner-content{
@@ -71,7 +81,15 @@
 .banner-image{
   width: 100%;
 }
+/* team and feature related styles */
+.teams{
+  align-items: center;
+}
+
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
-  
+  .navbar, .nav-links{
+    flex-direction: column;
+  }
 }
